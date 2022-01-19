@@ -3,8 +3,10 @@
     "baseUrl": "./",
     "module": "commonjs",
     "removeComments": true,
-    "target": "es2019",
-    "lib": ["es2019"],
+    "target": "es2020",
+    "lib": [
+      "es2020"
+    ],
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
@@ -12,8 +14,19 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "skipLibCheck": true
   },
-  "exclude": ["node_modules", "dist"],
-  "include": ["src"]
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "src"
+  ]
 }
